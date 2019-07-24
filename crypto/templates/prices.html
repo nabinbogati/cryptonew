@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+{% block content%}
+
+        <!-- {{ notfound }} -->
+
+
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container" style="text-align: center">
+                    <h6 class="display-4" style="text-align: center">Search For The Crypto Currencies</h6>
+                    <strong>Name</strong>  {{ key }} <br>
+                    <strong>Price</strong>  {{ value.USD.PRICE }} <br>
+                    <strong>HighDay</strong>  {{ value.USD.HIGHDAY }} <br>
+                    <strong>LowDay</strong>{{ value.USD.LOWDAY }} <br>
+                    <strong>MarketCap</strong>  {{ value.USD.MKTCAP }} <br>
+                    <strong>Market</strong>  {{ value.USD.MARKET }} <br>
+                </div>
+        </div>
+        {% for key,value in crypto.DISPLAY.items %}
+
+            <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">The Detail for {{ key }} in {{ value.USD.MARKET }}</h1>
+                        <strong>Name</strong>  {{ key }} <br>
+                        <strong>Price</strong>  {{ value.USD.PRICE }} <br>
+                        <strong>HighDay</strong>  {{ value.USD.HIGHDAY }} <br>
+                        <strong>LowDay</strong>{{ value.USD.LOWDAY }} <br>
+                        <strong>MarketCap</strong>  {{ value.USD.MKTCAP }} <br>
+                        <strong>Market</strong>  {{ value.USD.MARKET }} <br>
+                    </div>
+            </div>
+            
+        {% endfor %}
+{%endblock%}
