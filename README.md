@@ -1,4 +1,4 @@
-# CryptoNew or CryptoNews
+# CryptoNews
 
 ``` A web application developed using python3.\
     It uses the web scrapping technologies to present data to the users.
