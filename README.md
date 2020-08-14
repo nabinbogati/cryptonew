@@ -1,11 +1,6 @@
 # CryptoNews
 
-```
-A web application developed using python3.
-It uses the web scrapping technologies to present data to the users.
-Enables users to view the BTC price and other information
-It uses opensource api to get cryptocurrency data.
-```
+A web application that enables users to view the cryptocurrency information using opensource api.
 
 > Features
 1. Enables user to navigate through multiple currencies
